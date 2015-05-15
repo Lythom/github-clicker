@@ -27,6 +27,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^1.0.1",
     "gulp-webpack": "^1.1.0",
+    "gulp-nodemon": "^2.0.3",
     "jsx-loader": "^0.12.2",
     "literalify": "^0.3.0",
     "lodash": "^2.4.1",
