@@ -5,7 +5,7 @@ var GenerateCodeDisplay = require('./GenerateCodeDisplay.js');
 
 var App = React.createClass({
     componentDidMount: function () {
-        this.refs.myInput.getDOMNode().focus();
+        // this.refs.myInput.getDOMNode().focus();
     },
     getInitialState: function(){
         return {
