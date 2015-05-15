@@ -69,7 +69,6 @@ app.get('/', function(req, res) {
         res.end({result:count});
     })
     .post('/count', function(req, res) {
-        console.log(req.body);
         var count = req.body.nbClick;
         var session = req.session;
         session.count = count;
