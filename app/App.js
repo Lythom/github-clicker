@@ -1,4 +1,5 @@
 var React = require('react');
+var $ = require('jquery');
 var GenerateCodeButton = require('./GenerateCodeButton.js');
 var GenerateCodeDisplay = require('./GenerateCodeDisplay.js');
 
@@ -6,10 +7,14 @@ var GenerateCodeDisplay = require('./GenerateCodeDisplay.js');
 var App = React.createClass({
     componentDidMount: function () {
         // this.refs.myInput.getDOMNode().focus();
+        setInterval(this.saveCountToServer, this.props.pollInterval);
+    },
+    saveCountToServer: function(){
+        $.post('count',{nbClick: this.state.nbClick});
     },
     getInitialState: function(){
         return {
-            nbClick:0
+            nbClick: parseInt(this.props.nbClick)
         };
     },
 

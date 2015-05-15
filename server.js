@@ -29,8 +29,8 @@ app.get('/', function(req, res) {
         // Our data to be passed in to the React component for rendering
         var session = req.session;
         var props = {
-            data: ['any', 'data', 'you', 'want', 'to', 'send', 'on'],
-            nbClick: session.count || 0
+            nbClick: session.count || 0,
+            pollInterval: 1000
         };
 
         // Render the component, pass in data as props
@@ -74,7 +74,6 @@ app.get('/', function(req, res) {
         var session = req.session;
         session.count = count;
         res.end();
-        console.log('count = ' + session.count);
     })
     // static files
     .get('/vendor.js', function(req, res) {
