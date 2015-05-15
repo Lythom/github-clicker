@@ -12,7 +12,7 @@ var http = require('http'),
 // This is our bundled React components
 // Shared by server and browser thanks to browserify
 // Build with 'gulp build'
-MyApp = React.createFactory(require('./build/bundle'))
+MyApp = React.createFactory(require('./build/App'))
 
 // init sessions
 app.use(session({

@@ -9,7 +9,7 @@ gulp.task('reactify', function() {
     var reactify = require('reactify');
     //var brfs = require('brfs');
 	browserify()
-    .require('./app/App.jsx', {expose: 'myApp'}, reactify)
+    .require('./app/App.js', {expose: 'myApp'}, reactify)
 	.transform({global: true}, 
         literalify.configure(
         {

@@ -1,6 +1,6 @@
 var React = require('react');
-var GenerateCodeButton = require('./GenerateCodeButton.jsx');
-var GenerateCodeDisplay = require('./GenerateCodeDisplay.jsx');
+var GenerateCodeButton = require('./GenerateCodeButton.js');
+var GenerateCodeDisplay = require('./GenerateCodeDisplay.js');
 
 
 var App = React.createClass({
