@@ -7,3 +7,4 @@ coverage*
 v8.log
 .vhash
 .version
+/public
